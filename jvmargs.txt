@@ -1,0 +1,28 @@
+-Xmx2G
+-Xms2G
+-XX:+UseFastJNIAccessors
+-XX:+DisableExplicitGC
+-Djava.net.preferIPv4Stack=true 
+-server -XX:+UnlockExperimentalVMOptions 
+-XX:CompileThreshold=752253 
+-XX:+TieredCompilation 
+-XX:+UseStringCache 
+-XX:+OptimizeStringConcat 
+-XX:+UseBiasedLocking 
+-Xnoclassgc 
+-XX:+UseFastAccessorMethods 
+-XX:+UseCompressedOops 
+-XX:+UseG1GC 
+-XX:NewSize=624m -
+XX:MaxNewSize=624m 
+-XX:MaxGCPauseMillis=5 
+-XX:G1HeapRegionSize=128k 
+-XX:G1HeapWastePercent=8 
+-XX:InitiatingHeapOccupancyPercent=69 
+-XX:SurvivorRatio=71 
+-XX:TargetSurvivorRatio=85 
+-XX:MaxTenuringThreshold=6 
+-XX:MaxHeapFreeRatio=11 
+-XX:MinHeapFreeRatio=7 
+-XX:ParallelGCThreads=2 
+-XX:ConcGCThreads=1
